@@ -7,7 +7,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient
 
 @SpringBootApplication
 @EnableConfigServer
-@EnableEurekaClient
 class SwagConfigServerApplication
 
 fun main(args: Array<String>) {

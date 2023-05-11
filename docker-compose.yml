@@ -1,0 +1,16 @@
+version: "2.4"
+
+services:
+  # ---------------- CONFIG ----------------
+  swag-config-server:
+    image: swag-config-server:1.0.0
+    restart: always
+    mem_limit: 400m
+    ports:
+      - "8888:8888"
+    networks:
+      - swag-network
+
+networks:
+  swag-network:
+    external: true
