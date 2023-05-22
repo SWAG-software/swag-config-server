@@ -10,6 +10,15 @@ services:
       - "8888:8888"
     networks:
       - swag-network
+  # ---------------- ZIPKIN ----------------
+  openzipkin-zipkin:
+    image: openzipkin/zipkin
+    restart: always
+    mem_limit: 400m
+    ports:
+      - "9411:9411"
+    networks:
+      - swag-network
 
 networks:
   swag-network:
